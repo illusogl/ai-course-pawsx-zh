@@ -1,0 +1,2 @@
+python oj/run.py --method trad --split compare --input compare50.jsonl --out results.compare.jsonl --seed 0
+trad compare: rows=50, errors=0, unidentified=0

@@ -1,0 +1,2 @@
+# NumPy is required for training only. OJ inference uses the standard library.
+numpy==2.3.5

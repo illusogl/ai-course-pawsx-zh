@@ -1,0 +1,2 @@
+python oj/run.py --method trad --split dev1200.a --input dev1200.a.inputs.jsonl --out results.dev1200.a.jsonl --seed 0
+trad dev1200.a: rows=1200, errors=0, unidentified=0

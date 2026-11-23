@@ -1,0 +1,69 @@
+{
+  "trad": {
+    "total": 100,
+    "prediction_records": 100,
+    "missing": 0,
+    "duplicate_ids": 0,
+    "unknown_records": 0,
+    "accuracy": 0.75,
+    "macro_f1": 0.7479584635547938,
+    "valid_output_count": 100,
+    "valid_output_rate": 1.0,
+    "task": "single_label",
+    "coverage": 1.0,
+    "accuracy_ci95": [
+      0.66,
+      0.83
+    ],
+    "error_counts": {
+      "false_positive": 11,
+      "false_negative": 14
+    }
+  },
+  "baseline": {
+    "total": 100,
+    "prediction_records": 100,
+    "missing": 0,
+    "duplicate_ids": 0,
+    "unknown_records": 0,
+    "accuracy": 0.57,
+    "macro_f1": 0.4341360705355968,
+    "valid_output_count": 100,
+    "valid_output_rate": 1.0,
+    "task": "single_label",
+    "coverage": 1.0,
+    "accuracy_ci95": [
+      0.47,
+      0.67
+    ],
+    "error_counts": {
+      "false_negative": 43
+    }
+  },
+  "protocol": {
+    "dev": {
+      "rows": 100,
+      "coverage": 1.0,
+      "valid": 100,
+      "statuses": {
+        "ok": 100
+      }
+    },
+    "test": {
+      "rows": 1965,
+      "coverage": 1.0,
+      "valid": 1965,
+      "statuses": {
+        "ok": 1965
+      }
+    },
+    "compare": {
+      "rows": 50,
+      "coverage": 1.0,
+      "valid": 50,
+      "statuses": {
+        "ok": 50
+      }
+    }
+  }
+}

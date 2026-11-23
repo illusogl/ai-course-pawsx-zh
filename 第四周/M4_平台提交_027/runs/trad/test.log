@@ -1,0 +1,2 @@
+python oj/run.py --method trad --split test --input test_inputs.jsonl --out results.test.jsonl --seed 0
+trad test: rows=1965, errors=0, unidentified=0

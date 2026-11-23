@@ -1,0 +1,2 @@
+python oj/run.py --method trad --split holdout746 --input holdout746.inputs.jsonl --out results.holdout746.jsonl --seed 0
+trad holdout746: rows=746, errors=0, unidentified=0

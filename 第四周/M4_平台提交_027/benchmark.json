@@ -1,0 +1,33 @@
+{
+  "schema": "pawsx-zh.m4-trad/1",
+  "group": "027",
+  "dataset_version": "course-v1-20261028",
+  "method": "trad",
+  "seed": 0,
+  "selection_split": "dev1200",
+  "holdout_split": "holdout746",
+  "selected": {
+    "width": 32,
+    "learning_rate": 0.01,
+    "epoch": 25,
+    "threshold": -0.3,
+    "correct": 885,
+    "accuracy": 0.7375,
+    "macro_f1": 0.7254899967247616,
+    "online_log_loss": 0.48321686670131775
+  },
+  "files": {
+    "models/trad.json": "b335c19ae4621ff4ab801896b909eef22f43c544ab94c1f78ba6ba4472ce82b4",
+    "oj/run.py": "b64a67c80cae637f031dc8e03e730d7842fd1dae060dd0de91cee890dabbea9c",
+    "oj/model.py": "3114e18b775fe301c053f5b49c72a34a4369675639ce92867372901fc7701f9b",
+    "oj/scoring.py": "d70674a0a6606a4e7d14121b48e6d40a5ddf55b5d3dfdb4dacdc3763429e4739"
+  },
+  "data_sha256": {
+    "train.jsonl": "e8b99ef73106d273f1ff7cbd7af7400f08c1ac0118fd73be2ed17c6a2708f105",
+    "splits/dev1200.jsonl": "2357da1e081c873235fe195db66170a8b1236413431e1ad88e85aaacc9d52729",
+    "splits/holdout746.jsonl": "ff32339837554441a7c2871bb7ba40a9ab82eaee661413d4e5ca534412058276",
+    "dev100.jsonl": "00708c6fbe42bf599671da16c9ad0836cbeef1c58ac54984558449945235569b",
+    "test_inputs.jsonl": "bce101deff1e5c0afc91fd43f2214131c5e375add6c8c1f8eedf841417f32a2e",
+    "compare50.jsonl": "be16b7511e686fd35a9576115b6d0977bc8d055abe5b9e1f60733fcc9ee4e3ba"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "holdout746": {
+    "total": 746,
+    "prediction_records": 746,
+    "missing": 0,
+    "duplicate_ids": 0,
+    "unknown_records": 0,
+    "accuracy": 0.7198391420911529,
+    "macro_f1": 0.706855285249884,
+    "valid_output_count": 746,
+    "valid_output_rate": 1.0,
+    "task": "single_label",
+    "coverage": 1.0,
+    "accuracy_ci95": [
+      0.6863270777479893,
+      0.7520107238605898
+    ],
+    "error_counts": {
+      "false_positive": 77,
+      "false_negative": 132
+    }
+  },
+  "protocol": {
+    "sha256": "c75fcbe81a1bda1284e24f39533882fd61a46a097cc437591e118402144a7f39",
+    "seconds": 0.3034,
+    "rows": 746,
+    "coverage": 1.0,
+    "valid": 746,
+    "statuses": {
+      "ok": 746
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "dev1200": {
+    "total": 1200,
+    "prediction_records": 1200,
+    "missing": 0,
+    "duplicate_ids": 0,
+    "unknown_records": 0,
+    "accuracy": 0.7375,
+    "macro_f1": 0.7254899967247616,
+    "valid_output_count": 1200,
+    "valid_output_rate": 1.0,
+    "task": "single_label",
+    "coverage": 1.0,
+    "accuracy_ci95": [
+      0.7125,
+      0.7616666666666667
+    ],
+    "error_counts": {
+      "false_positive": 113,
+      "false_negative": 202
+    }
+  },
+  "repeat": [
+    {
+      "sha256": "9752b0f0321954713af4257e64fca942d13a994747f05739624b9ef54cddbe9d",
+      "seconds": 0.4183,
+      "rows": 1200,
+      "coverage": 1.0,
+      "valid": 1200,
+      "statuses": {
+        "ok": 1200
+      }
+    },
+    {
+      "sha256": "9752b0f0321954713af4257e64fca942d13a994747f05739624b9ef54cddbe9d",
+      "seconds": 0.3954,
+      "rows": 1200,
+      "coverage": 1.0,
+      "valid": 1200,
+      "statuses": {
+        "ok": 1200
+      }
+    }
+  ],
+  "protocol": {
+    "test": {
+      "seconds": 0.5809,
+      "rows": 1965,
+      "coverage": 1.0,
+      "valid": 1965,
+      "statuses": {
+        "ok": 1965
+      }
+    },
+    "compare": {
+      "seconds": 0.1138,
+      "rows": 50,
+      "coverage": 1.0,
+      "valid": 50,
+      "statuses": {
+        "ok": 50
+      }
+    },
+    "dev100": {
+      "seconds": 0.1278,
+      "rows": 100,
+      "coverage": 1.0,
+      "valid": 100,
+      "statuses": {
+        "ok": 100
+      }
+    }
+  }
+}

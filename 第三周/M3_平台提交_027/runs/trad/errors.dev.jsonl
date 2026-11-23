@@ -1,0 +1,25 @@
+{"item_id": "paws-zh-validation-1793", "text_pair": ["1977 年，罗布·泰勒与巴伯前往苏格兰和挪威攀登瀑布。", "1977 年，巴伯与罗伯·泰勒前往苏格兰和挪威攀登瀑布。"], "gold": 0, "prediction": 1, "status": "ok"}
+{"item_id": "paws-zh-validation-1809", "text_pair": ["尽管斯洛文尼亚的联合式橄榄球是该运动在前南斯拉夫的主要中心，但克罗地亚仍在举办众多橄榄球比赛。", "尽管斯洛文尼亚的联合式橄榄球是该运动在前南斯拉夫的主要中心，克罗地亚仍会举办相当多的橄榄球比赛。"], "gold": 0, "prediction": 1, "status": "ok"}
+{"item_id": "paws-zh-validation-1978", "text_pair": ["之后，他相继前往瑞士和意大利，并在那里遇到了雪莱和拜伦。", "后来，他先后前往瑞士和意大利，并遇到了雪莱和拜伦。"], "gold": 0, "prediction": 1, "status": "ok"}
+{"item_id": "paws-zh-validation-2593", "text_pair": ["魏玛共和国初期有一些反对准军事犹太人的暴力行为，这种行为由德国自由军团领导。", "在魏玛共和国的早期年代，发生了一场由德国自由军团领导的针对犹太人准军事部队的暴乱。"], "gold": 1, "prediction": 0, "status": "ok"}
+{"item_id": "paws-zh-validation-308", "text_pair": ["他是克拉伦斯·佩吉特上将、阿尔弗雷德·佩吉特上将和乔治·佩吉特上将的异姓兄弟。", "他是阿尔弗雷德·佩吉特勋爵、乔治·佩吉特勋爵和克拉伦斯·佩吉特勋爵同父异母的兄弟。"], "gold": 1, "prediction": 0, "status": "ok"}
+{"item_id": "paws-zh-validation-348", "text_pair": ["1291 年，马奥与勃艮第伯爵奥托四世结婚。她娶了三个孩子的母亲，其中包括两个成为法国国王的女孩。", "1291 年，马奥嫁给勃艮第伯爵奥托四世，育有三个子女，其中两位女孩嫁给法国的国王。"], "gold": 0, "prediction": 1, "status": "ok"}
+{"item_id": "paws-zh-validation-3595", "text_pair": ["教区教堂建于 1591 年，但随着 18 世纪天主教徒的涌入，形成了一个天主教徒聚集区。", "教区教堂成立于 1591 年，但随着 18 世纪天主教徒的涌入，天主教徒占多数的局面已经形成。"], "gold": 1, "prediction": 0, "status": "ok"}
+{"item_id": "paws-zh-validation-4188", "text_pair": ["1989 年 11 月，德莱尼成为纽约证券交易所的一员，并担任 Henderson Brother,Inc. 和 Bear Wagner 的高级董事总经理。", "1989 年 11 月，德莱尼成为纽约证券交易所的会员，并担任 Henderson Brothers , Inc. 和 Bear Wagner 的高级董事。"], "gold": 0, "prediction": 1, "status": "ok"}
+{"item_id": "paws-zh-validation-4344", "text_pair": ["1960 年，他在这片大陆上重新开始，征战环法自行车赛。", "他于 1960 年再次在该大陆骑行并开始了环法自行车赛。"], "gold": 0, "prediction": 1, "status": "ok"}
+{"item_id": "paws-zh-validation-4576", "text_pair": ["首先描述花粉量高的区域，而非花粉量低的区域。", "首先，描述具有高花粉价值而非低花粉价值的区域。"], "gold": 1, "prediction": 0, "status": "ok"}
+{"item_id": "paws-zh-validation-4983", "text_pair": ["“粉碎者”于 1987 年 6 月 13 日在日本发行，并由东宝株式会社出版。", "《粉碎者》于 1987 年 6 月 13 日在日本发布并由东宝发行。"], "gold": 0, "prediction": 1, "status": "ok"}
+{"item_id": "paws-zh-validation-5176", "text_pair": ["继 1939 年纳粹德国和苏联入侵波兰后，Osterwa 便积极投身地下教育但同时也抱病在身。", "在纳粹德国和苏联于 1939 年入侵波兰后，欧斯特瓦便积极参与地下教育，但同时也染上疾病。"], "gold": 1, "prediction": 0, "status": "ok"}
+{"item_id": "paws-zh-validation-5258", "text_pair": ["泰勒仍旧活跃于棒球界，直至去世前一直为亚特兰大勇士队、密尔瓦基队和芝加哥白袜队担任球探。", "泰勒生前仍然积极地担任芝加哥白袜队、密尔沃基棒球队和亚特兰大勇者队的球探。"], "gold": 1, "prediction": 0, "status": "ok"}
+{"item_id": "paws-zh-validation-5327", "text_pair": ["詹姆斯敦风车是位于罗德岛詹姆斯墩北部北街上的一座八角型风车，坐落于风车山历史区内的威登大道上。", "詹姆斯敦风车是位于罗德岛詹姆斯敦的磨坊风车，位于 Weeden Lane 以北北路的风车山历史区内。"], "gold": 0, "prediction": 1, "status": "ok"}
+{"item_id": "paws-zh-validation-5418", "text_pair": ["大卫 I. 沃尔什最近的传记作者写到：“摧毁沃尔什的运动起了作用，因为他无法为自己辩护... 大卫 I· 沃尔什是同性恋。", "沃尔什最近的传记作者写道：“摧毁大卫·I·沃尔什的活动起了作用，因为他无法为自己辩护……大卫·I·沃尔什是同性恋者。”"], "gold": 0, "prediction": 1, "status": "ok"}
+{"item_id": "paws-zh-validation-5557", "text_pair": ["马莱特娶了玛丽·阿尔德沃斯，一直到 1664 年，她是伯克郡雷特康比·瑞吉斯的约翰·阿尔德沃斯的遗孀和法菲尔德伯克郡的托马斯·怀特的女儿。", "马利特娶了玛丽·奥德沃思，后者是伯克郡 Letcombe Regis 约翰·奥德沃思的遗孀，也是伯克郡 Fyfield 托马斯·怀特的女儿（1664 年之前）。"], "gold": 1, "prediction": 0, "status": "ok"}
+{"item_id": "paws-zh-validation-5567", "text_pair": ["这些在英国很常见，但在欧洲比较少见，至少大型机车如此。", "这些在英国十分常见，但在欧洲，至少对于大型机车而言，它相对少见。"], "gold": 1, "prediction": 0, "status": "ok"}
+{"item_id": "paws-zh-validation-5761", "text_pair": ["同样值得注意的是，以下代码可在缺乏 ADL 时运行（任何情况下均适用）。", "还有一点值得注意的是，下列代码没有 ADL 也能运行（不论如何均可应用在它身上）。"], "gold": 1, "prediction": 0, "status": "ok"}
+{"item_id": "paws-zh-validation-5779", "text_pair": ["Cast 主要从事另类音乐和独立音乐。", "演员主要关注独立音乐和另类音乐。"], "gold": 1, "prediction": 0, "status": "ok"}
+{"item_id": "paws-zh-validation-6125", "text_pair": ["阿尔法罗是第三位被判处在毒气室接受死刑的妇女，而在判决她时，她是加利福尼亚州的第一位死囚妇女。", "阿尔法罗是毒气室中被处死的第三名女性，在宣判时，她是加州死刑犯中的第一位女性。"], "gold": 1, "prediction": 0, "status": "ok"}
+{"item_id": "paws-zh-validation-6196", "text_pair": ["科尔内利乌斯·欧拉屯吉·阿德巴约是尼日利亚的前参议员，她成为州长，后来担任尼日利亚联邦交通部部长。", "Cornelius Olatunji Adebayo 是尼日利亚的前参议员，曾任州长，之后成为尼日利亚联邦通讯部部长。"], "gold": 1, "prediction": 0, "status": "ok"}
+{"item_id": "paws-zh-validation-6293", "text_pair": ["不过，麦当娜、普林斯和迈克尔·杰克逊都对该专辑产生了影响。", "不过，迈克尔·杰克逊、普林斯和麦当娜都对该专辑产生了影响。"], "gold": 1, "prediction": 0, "status": "ok"}
+{"item_id": "paws-zh-validation-6520", "text_pair": ["Abu Halifa 或 Abu Hulayfah 或 Abu Huleifa 或 Abu Haleifah 是位于科威特埃尔艾哈迈德省 Abu Halifa 区南部的一个小镇。", "Abu Halifa (或 Abu Hulayfah 或 Abu Huleifa 或 Abu Haleifah 是位于科威特南部埃尔艾哈迈德省 Abu Halifa 的一个小镇。"], "gold": 0, "prediction": 1, "status": "ok"}
+{"item_id": "paws-zh-validation-692", "text_pair": ["1291 年，Mahaut 与勃艮第伯爵奥托四世结婚，后者是三个孩子的母亲，其中有两个女孩嫁给法国国王。", "1291 年，Mahaut 与奥托四世勃艮第伯爵结婚。她成为三个孩子的母亲，其中有两个女孩都嫁给了法国国王。"], "gold": 1, "prediction": 0, "status": "ok"}
+{"item_id": "paws-zh-validation-7081", "text_pair": ["1977 年，罗布·泰勒前往苏格兰和挪威与巴伯攀登瀑布。", "1977 年，巴尔伯于罗勃·泰勒一起前往苏格兰和挪威以攀登瀑布。"], "gold": 0, "prediction": 1, "status": "ok"}
