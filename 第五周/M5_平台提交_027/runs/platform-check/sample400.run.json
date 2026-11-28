@@ -1,0 +1,16 @@
+{
+  "split": "test",
+  "input_file": "local-first400.jsonl",
+  "input_sha256": "36746a23b7b358da0ed3d1bbed88cf297ba1564a844f033f36c5b8417bc2ba10",
+  "prompt": "zero-shot",
+  "system_message_sha256": "5ef662cdbf6a77de7b7e1cde12b379fe0e1aec0d6a2dc8d7891679fd40520eb5",
+  "model_config_sha256": "b3b387c2c86428540dcafc9f3b0e3f229faf671cba079005fb21e1fa58d49ad5",
+  "python": "3.10.11",
+  "seed": 0,
+  "endpoint": "bundled",
+  "session_id": "6fcdba3e-6f2a-4c22-a987-686637c0a0ee",
+  "workers": 8,
+  "item_count": 400,
+  "started_at": "2026-11-28T15:30:50.045308+00:00",
+  "platform_config_sha256": "1137742080856ade08600dd746ca4d1870814198a31fe96acf997961db7fecba"
+}

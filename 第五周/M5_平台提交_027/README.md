@@ -20,6 +20,10 @@ python oj/package_submission.py --assets '权重和运行时所在的目录'
 python oj/run.py --method llm --split test --input data/test_inputs.jsonl --out results.jsonl --seed 0
 ```
 
+从干净目录解包 Windows 验证版后，用 `python -S` 对公开 `test_inputs.jsonl` 的前 400 条实测。400 条均保留原题号并返回 `status=ok`，其中标签 0 有 284 条，标签 1 有 116 条。逐题模型响应和运行配置在 [runs/platform-check](runs/platform-check)。这份公开输入无标签，成功率只表示入口能正常产出答案。
+
+GitHub Actions 的 M5 Linux 检查会在禁用 IP 网络的环境里运行解包后的入口，覆盖两种输入结构。
+
 ## 原实验的留出集结果
 
 | 方法 | 答对 / 总数 | 准确率 | Macro-F1 | 合法输出 |
