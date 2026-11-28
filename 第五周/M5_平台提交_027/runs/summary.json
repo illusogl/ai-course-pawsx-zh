@@ -1,0 +1,266 @@
+{
+  "holdout746": {
+    "metrics": {
+      "zero-shot": {
+        "total": 746,
+        "prediction_records": 746,
+        "missing": 0,
+        "duplicate_ids": 0,
+        "unknown_records": 0,
+        "accuracy": 0.564343163538874,
+        "macro_f1": 0.36168384879725085,
+        "valid_output_count": 740,
+        "valid_output_rate": 0.9919571045576407,
+        "task": "single_label",
+        "accuracy_ci95": [
+          0.5294906166219839,
+          0.599195710455764
+        ],
+        "error_counts": {
+          "timeout": 6,
+          "false_negative": 319
+        }
+      },
+      "few-shot": {
+        "total": 746,
+        "prediction_records": 746,
+        "missing": 0,
+        "duplicate_ids": 0,
+        "unknown_records": 0,
+        "accuracy": 0.47050938337801607,
+        "macro_f1": 0.4418653104904774,
+        "valid_output_count": 746,
+        "valid_output_rate": 1.0,
+        "task": "single_label",
+        "accuracy_ci95": [
+          0.43297587131367293,
+          0.5080428954423593
+        ],
+        "error_counts": {
+          "false_negative": 231,
+          "false_positive": 164
+        }
+      },
+      "trad": {
+        "total": 746,
+        "prediction_records": 746,
+        "missing": 0,
+        "duplicate_ids": 0,
+        "unknown_records": 0,
+        "accuracy": 0.7198391420911529,
+        "macro_f1": 0.706855285249884,
+        "valid_output_count": 746,
+        "valid_output_rate": 1.0,
+        "task": "single_label",
+        "accuracy_ci95": [
+          0.6876675603217158,
+          0.7506702412868632
+        ],
+        "error_counts": {
+          "false_positive": 77,
+          "false_negative": 132
+        }
+      }
+    },
+    "paired": {
+      "zero-shot_minus_trad": {
+        "accuracy_delta": -0.1554959785522788,
+        "ci95": [
+          -0.1903485254691689,
+          -0.11662198391420911
+        ],
+        "left_only_correct": 75,
+        "right_only_correct": 191
+      },
+      "few-shot_minus_trad": {
+        "accuracy_delta": -0.24932975871313673,
+        "ci95": [
+          -0.2975871313672922,
+          -0.19973190348525469
+        ],
+        "left_only_correct": 103,
+        "right_only_correct": 289
+      },
+      "few-shot_minus_zero-shot": {
+        "accuracy_delta": -0.0938337801608579,
+        "ci95": [
+          -0.13672922252010725,
+          -0.049597855227882036
+        ],
+        "left_only_correct": 92,
+        "right_only_correct": 162
+      }
+    }
+  },
+  "protocol": {
+    "zero-shot": {
+      "holdout746": {
+        "rows": 746,
+        "coverage": 1.0,
+        "valid": 740,
+        "statuses": {
+          "timeout": 6,
+          "ok": 740
+        },
+        "latency_ms_p50": 10395.4,
+        "latency_ms_p95": 14732.35,
+        "tokens_in": 154558,
+        "tokens_out": 5180,
+        "known_cost_usd": 0,
+        "rows_with_cost": 746,
+        "requests": 746,
+        "allowance_usd": 0,
+        "http_statuses": {
+          "None": 6,
+          "200": 740
+        }
+      },
+      "test": {
+        "rows": 1965,
+        "coverage": 1.0,
+        "valid": 1955,
+        "statuses": {
+          "ok": 1955,
+          "timeout": 10
+        },
+        "latency_ms_p50": 8638.4,
+        "latency_ms_p95": 19073.2,
+        "tokens_in": 408170,
+        "tokens_out": 13685,
+        "known_cost_usd": 0,
+        "rows_with_cost": 1965,
+        "requests": 1965,
+        "allowance_usd": 0,
+        "http_statuses": {
+          "200": 1955,
+          "None": 10
+        }
+      },
+      "dev100": {
+        "rows": 100,
+        "coverage": 1.0,
+        "valid": 92,
+        "statuses": {
+          "timeout": 8,
+          "ok": 92
+        },
+        "latency_ms_p50": 14782.25,
+        "latency_ms_p95": 30078.525,
+        "tokens_in": 19149,
+        "tokens_out": 644,
+        "known_cost_usd": 0,
+        "rows_with_cost": 100,
+        "requests": 100,
+        "allowance_usd": 0,
+        "http_statuses": {
+          "None": 8,
+          "200": 92
+        }
+      },
+      "compare50": {
+        "rows": 50,
+        "coverage": 1.0,
+        "valid": 50,
+        "statuses": {
+          "ok": 50
+        },
+        "latency_ms_p50": 8668.25,
+        "latency_ms_p95": 20445.605,
+        "tokens_in": 10086,
+        "tokens_out": 350,
+        "known_cost_usd": 0,
+        "rows_with_cost": 50,
+        "requests": 50,
+        "allowance_usd": 0,
+        "http_statuses": {
+          "200": 50
+        },
+        "derived_from": "zero-shot/test.jsonl"
+      }
+    },
+    "few-shot": {
+      "holdout746": {
+        "rows": 746,
+        "coverage": 1.0,
+        "valid": 746,
+        "statuses": {
+          "ok": 746
+        },
+        "latency_ms_p50": 10089.65,
+        "latency_ms_p95": 12052.9,
+        "tokens_in": 222929,
+        "tokens_out": 4477,
+        "known_cost_usd": 0,
+        "rows_with_cost": 746,
+        "requests": 746,
+        "allowance_usd": 0,
+        "http_statuses": {
+          "200": 746
+        }
+      },
+      "compare50": {
+        "rows": 50,
+        "coverage": 1.0,
+        "valid": 50,
+        "statuses": {
+          "ok": 50
+        },
+        "latency_ms_p50": 8942.400000000001,
+        "latency_ms_p95": 10299.55,
+        "tokens_in": 14586,
+        "tokens_out": 300,
+        "known_cost_usd": 0,
+        "rows_with_cost": 50,
+        "requests": 50,
+        "allowance_usd": 0,
+        "http_statuses": {
+          "200": 50
+        }
+      }
+    },
+    "trad": {
+      "holdout746": {
+        "rows": 746,
+        "coverage": 1.0,
+        "valid": 746,
+        "statuses": {
+          "ok": 746
+        },
+        "latency_ms_p50": 0.0,
+        "latency_ms_p95": 0.0,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "known_cost_usd": 0.0,
+        "rows_with_cost": 746
+      },
+      "test": {
+        "rows": 1965,
+        "coverage": 1.0,
+        "valid": 1965,
+        "statuses": {
+          "ok": 1965
+        },
+        "latency_ms_p50": 0,
+        "latency_ms_p95": 0.0,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "known_cost_usd": 0.0,
+        "rows_with_cost": 1965
+      },
+      "compare50": {
+        "rows": 50,
+        "coverage": 1.0,
+        "valid": 50,
+        "statuses": {
+          "ok": 50
+        },
+        "latency_ms_p50": 0.0,
+        "latency_ms_p95": 0.0,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "known_cost_usd": 0.0,
+        "rows_with_cost": 50
+      }
+    }
+  }
+}

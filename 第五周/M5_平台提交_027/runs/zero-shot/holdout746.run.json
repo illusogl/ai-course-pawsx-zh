@@ -1,0 +1,14 @@
+{
+  "split": "holdout746",
+  "input_file": "holdout746.jsonl",
+  "input_sha256": "ff32339837554441a7c2871bb7ba40a9ab82eaee661413d4e5ca534412058276",
+  "prompt": "zero-shot",
+  "system_message_sha256": "5ef662cdbf6a77de7b7e1cde12b379fe0e1aec0d6a2dc8d7891679fd40520eb5",
+  "model_config_sha256": "b3b387c2c86428540dcafc9f3b0e3f229faf671cba079005fb21e1fa58d49ad5",
+  "requests_version": "2.34.2",
+  "python": "3.10.11",
+  "session_id": "77a1c9ac-9499-4d8f-94d9-d47b7b8456f6",
+  "workers": 6,
+  "item_count": 746,
+  "started_at": "2026-11-28T13:12:03.821189+00:00"
+}

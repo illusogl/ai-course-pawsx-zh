@@ -1,0 +1,14 @@
+{
+  "split": "dev100",
+  "input_file": "dev100.jsonl",
+  "input_sha256": "00708c6fbe42bf599671da16c9ad0836cbeef1c58ac54984558449945235569b",
+  "prompt": "zero-shot",
+  "system_message_sha256": "5ef662cdbf6a77de7b7e1cde12b379fe0e1aec0d6a2dc8d7891679fd40520eb5",
+  "model_config_sha256": "d2e687cc159b2b64b291d0b495e79fea7ff1d168f3b9bd96745236d83b58cc25",
+  "requests_version": "2.34.2",
+  "python": "3.10.11",
+  "session_id": "405eb328-ad40-48d7-9db2-05a324c96266",
+  "workers": 10,
+  "item_count": 100,
+  "started_at": "2026-11-28T13:04:30.685340+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "split": "test",
+  "input_file": "test_inputs.jsonl",
+  "input_sha256": "bce101deff1e5c0afc91fd43f2214131c5e375add6c8c1f8eedf841417f32a2e",
+  "prompt": "zero-shot",
+  "system_message_sha256": "5ef662cdbf6a77de7b7e1cde12b379fe0e1aec0d6a2dc8d7891679fd40520eb5",
+  "model_config_sha256": "b3b387c2c86428540dcafc9f3b0e3f229faf671cba079005fb21e1fa58d49ad5",
+  "requests_version": "2.34.2",
+  "python": "3.10.11",
+  "endpoint": "http://127.0.0.1:8087/v1/chat/completions",
+  "session_id": "40277fd9-572e-4674-8083-78a44bbef36e",
+  "workers": 10,
+  "item_count": 1965,
+  "started_at": "2026-11-28T13:23:04.561666+00:00"
+}

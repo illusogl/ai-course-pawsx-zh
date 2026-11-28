@@ -1,0 +1,14 @@
+{
+  "split": "test",
+  "input_file": "test_inputs.jsonl",
+  "input_sha256": "bce101deff1e5c0afc91fd43f2214131c5e375add6c8c1f8eedf841417f32a2e",
+  "prompt": "zero-shot",
+  "system_message_sha256": "5ef662cdbf6a77de7b7e1cde12b379fe0e1aec0d6a2dc8d7891679fd40520eb5",
+  "model_config_sha256": "d2e687cc159b2b64b291d0b495e79fea7ff1d168f3b9bd96745236d83b58cc25",
+  "requests_version": "2.34.2",
+  "python": "3.10.11",
+  "session_id": "3f295da8-535a-42e4-844b-b6118f46282c",
+  "workers": 10,
+  "item_count": 1965,
+  "started_at": "2026-11-28T13:02:51.071792+00:00"
+}

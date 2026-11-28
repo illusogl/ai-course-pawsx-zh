@@ -1,0 +1,12 @@
+{
+  "schema": "oj.manifest/1",
+  "group": "027",
+  "module": "M5",
+  "task_id": "T4-PAR-⑩",
+  "entry": "oj/run.py",
+  "methods": ["llm"],
+  "splits": ["dev", "test"],
+  "seed": 0,
+  "dataset": "pawsx_zh",
+  "focus": "⑩"
+}

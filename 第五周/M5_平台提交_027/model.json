@@ -1,0 +1,48 @@
+{
+  "provider": "llama.cpp 本地 CPU",
+  "endpoint": "http://127.0.0.1:8085/v1/chat/completions",
+  "api_key_required": false,
+  "runtime": {
+    "release": "llama.cpp b12758",
+    "commit": "5a09582d8",
+    "device": "Intel Core i5-13500H CPU",
+    "context": 12288,
+    "parallel": 12,
+    "threads": 8,
+    "threads_batch": 10
+  },
+  "weights": {
+    "file": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+    "revision": "9217f5db79a29953eb74d5343926648285ec7e67",
+    "sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db"
+  },
+  "request": {
+    "model": "qwen2.5-0.5b-instruct-q4_k_m",
+    "temperature": 0,
+    "max_tokens": 24,
+    "seed": 0,
+    "response_format": {
+      "type": "json_schema",
+      "json_schema": {
+        "name": "single_label",
+        "schema": {
+          "type": "object",
+          "properties": {"label": {"type": "integer", "enum": [0, 1]}},
+          "required": ["label"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "stream": false
+  },
+  "timeout_seconds": 30,
+  "attempts_per_item": 1,
+  "tools_enabled": false,
+  "retrieval_enabled": false,
+  "prompt_examples": {
+    "zero-shot": [],
+    "few-shot": ["paws-zh-validation-1089", "paws-zh-validation-1026"]
+  },
+  "examples_source": "data/splits/dev1200.jsonl",
+  "platform_default_prompt": "zero-shot"
+}
