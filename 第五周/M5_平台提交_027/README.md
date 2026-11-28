@@ -2,7 +2,25 @@
 
 027 组 · T4-PAR-⑩ 中文改写语义一致性核查系统。标签 0 为语义不同，1 为语义一致。
 
-## 留出集结果
+## 课程平台判题包
+
+提交由 `oj/package_submission.py` 生成的 Linux x86_64 `package.zip`。入口 `oj/run.py` 会自行启动随包提供的 llama.cpp，加载 `models/` 中的权重，并通过 Unix 文件套接字逐题推理。默认入口只用 Python 标准库，在判题时无需安装 Python 包、下载模型或启动外部服务。
+
+判题包用 Qwen2.5-0.5B-Instruct 的 Q4_0 权重把包大小控制在 450 MB 内。两版提示词和单次调用规则沿用第五周实验。下节分数和 Word 报告对应原实验的 Q4_K_M 权重。判题包使用的权重、运行时哈希和超时见 [platform.json](platform.json)。
+
+在同一个本地目录放入 [Q4_0 权重](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF/resolve/9217f5db79a29953eb74d5343926648285ec7e67/qwen2.5-0.5b-instruct-q4_0.gguf)和 [llama.cpp Linux 发布包](https://github.com/ggml-org/llama.cpp/releases/download/b12758/llama-b12758-bin-ubuntu-x64.tar.gz)，从 M5 目录执行以下命令。生成的大文件保存在本地。
+
+```powershell
+python oj/package_submission.py --assets '权重和运行时所在的目录'
+```
+
+解包后，平台可在目录内直接按统一入口运行。成功的题输出 `status=ok` 和整数标签，推理失败的题保留状态与原始响应。模型启动失败时，入口会把进程错误写到 stderr。
+
+```sh
+python oj/run.py --method llm --split test --input data/test_inputs.jsonl --out results.jsonl --seed 0
+```
+
+## 原实验的留出集结果
 
 | 方法 | 答对 / 总数 | 准确率 | Macro-F1 | 合法输出 |
 | --- | ---: | ---: | ---: | ---: |
@@ -26,7 +44,7 @@ compare50 两版各有 50/50 条合法输出。零样本全量测试保留 1,965
 
 实测使用相同权重和推理配置启动两个本地 CPU 服务。端口 8085 处理两版留出集和少样本 compare50，端口 8087 处理零样本 dev100 和 test_inputs。
 
-## 复现
+## 复现原实验
 
 下载 llama.cpp b12758 的 CPU 构建，以及指定版本的 Qwen GGUF。验证权重 SHA-256 与 `model.json` 一致后，在 PowerShell 中启动本地模型服务。 [llama.cpp b12758](https://github.com/ggml-org/llama.cpp/releases/tag/b12758) [Qwen GGUF 权重](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF/tree/9217f5db79a29953eb74d5343926648285ec7e67)
 
@@ -39,7 +57,7 @@ compare50 两版各有 50/50 条合法输出。零样本全量测试保留 1,965
 ```powershell
 python -m pip install -r requirements.txt
 $data = '../../pawsx_zh/T4-PAR-中文改写语义一致性/data'
-python oj/run.py --method llm --split compare50 --input "$data/compare50.jsonl" --out repro/results.compare50.jsonl --seed 0 --prompt few-shot --workers 6
+python oj/run.py --method llm --split compare50 --input "$data/compare50.jsonl" --out repro/results.compare50.jsonl --seed 0 --prompt few-shot --workers 6 --local-port 8085
 ```
 
 下列命令使用仓库内冻结数据和调用记录重新核验，不会调用模型。
@@ -49,4 +67,4 @@ python oj/evaluate.py
 python oj/evaluate.py --archive
 ```
 
-[判题包](package.zip)的入口写在 `manifest.json` 中，运行端需要启动上述本地模型服务。GitHub 保存代码、提示词、配置和运行证据，权重从所列版本取得。课程平台的体检、提交和 test400 成绩以平台记录为准。
+课程平台的正式 test400 成绩以平台记录为准。

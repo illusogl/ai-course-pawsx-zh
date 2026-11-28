@@ -1,0 +1,68 @@
+name: M5 Linux package smoke test
+
+on:
+  push:
+    paths:
+      - '.github/workflows/m5-linux-smoke.yml'
+      - '第五周/M5_平台提交_027/oj/**'
+      - '第五周/M5_平台提交_027/model.json'
+      - '第五周/M5_平台提交_027/platform.json'
+      - '第五周/M5_平台提交_027/prompts/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-entry:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Download model assets and build the Linux package
+        shell: bash
+        run: |
+          work="$RUNNER_TEMP/m5"
+          mkdir -p "$work"
+          python3 - "$work" <<'PY'
+          import json, pathlib, subprocess, sys
+          directory = pathlib.Path(sys.argv[1])
+          config = json.loads(pathlib.Path('第五周/M5_平台提交_027/platform.json').read_text())
+          model = config['model']
+          release = config['runtime']['release']
+          runtime = config['runtime']['linux']['archive']
+          base = 'https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF/resolve'
+          urls = (
+              (f"{base}/{model['revision']}/{model['file']}", model['file']),
+              (f"https://github.com/ggml-org/llama.cpp/releases/download/{release}/{runtime}", runtime),
+          )
+          for url, name in urls:
+              subprocess.run(['curl', '-fLsS', '--retry', '3', '-o', directory / name, url], check=True)
+          PY
+          python3 '第五周/M5_平台提交_027/oj/package_submission.py' --assets "$work" --out "$work/package.zip"
+          python3 -m zipfile -e "$work/package.zip" "$work/unpacked"
+      - name: Run the unpacked entry with IP networking disabled
+        shell: bash
+        run: |
+          cd "$RUNNER_TEMP/m5/unpacked"
+          cat > smoke.jsonl <<'JSONL'
+          {"item_id":"flat","text_pair":["商店上午六点营业。","这家店早上六点开门。"]}
+          {"id":"nested","input":{"text_pair":["她住在北京。","她住在南京。"]}}
+          JSONL
+          sudo unshare --net --setgid "$(id -g)" --setuid "$(id -u)" \
+            /usr/bin/python3 -S oj/run.py --method llm --split test --input smoke.jsonl --out results.jsonl --seed 0
+          python3 - <<'PY'
+          import json, pathlib
+          rows = [json.loads(line) for line in pathlib.Path('results.jsonl').read_text().splitlines()]
+          calls = [json.loads(line) for line in pathlib.Path('results.calls.jsonl').read_text().splitlines()]
+          assert [row['item_id'] for row in rows] == ['flat', 'nested']
+          assert [call['item_id'] for call in calls] == ['flat', 'nested']
+          for row in rows:
+              assert row['status'] == 'ok' and type(row['output']['label']) is int
+              assert row['output']['label'] in (0, 1) and row['usage']['tokens_in'] > 0
+              assert row['usage']['tool_calls'] == 0
+          assert all(call['request_attempts'] == 1 and call['http_status'] == 200 for call in calls)
+          print('M5 Linux offline package: 2/2 successful model answers')
+          PY

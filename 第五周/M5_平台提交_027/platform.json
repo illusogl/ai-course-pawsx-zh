@@ -1,0 +1,22 @@
+{
+  "model": {
+    "file": "qwen2.5-0.5b-instruct-q4_0.gguf",
+    "alias": "qwen2.5-0.5b-instruct-q4_0",
+    "revision": "9217f5db79a29953eb74d5343926648285ec7e67",
+    "sha256": "7671c0c304e6ce5a7fc577bcb12aba01e2c155cc2efd29b2213c95b18edaf6ed"
+  },
+  "runtime": {
+    "release": "b12758",
+    "linux": {
+      "archive": "llama-b12758-bin-ubuntu-x64.tar.gz",
+      "sha256": "2faec1da6d0d70fe70b92ee3dbc39b3072f523f3635bbd6060492444d1d94e65"
+    },
+    "windows": {
+      "archive": "llama-b12758-bin-win-cpu-x64.zip",
+      "sha256": "cc705feb715dd11e2710007710d878e19e16a5a6f6a8d003bf9dda6ded4fe6c8"
+    }
+  },
+  "startup_timeout_seconds": 120,
+  "request_timeout_seconds": 90,
+  "max_workers": 8
+}
